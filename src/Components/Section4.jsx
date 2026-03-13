@@ -44,19 +44,6 @@ const Section4 = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/10 hover:bg-white/15 transition-colors relative">
             <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-6 relative">
               <FaceSmileIcon className="w-8 h-8 text-white" />
-              
-              {/* Static Cursor Tooltip */}
-              <div className="absolute top-10 left-10 z-20 flex items-start drop-shadow-xl pointer-events-none">
-                {/* SVG Pointer */}
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="z-20 rotate-[-15deg]">
-                  <path d="M5.5 3L11 21L14.5 14.5L21 11L5.5 3Z" fill="#10b981" stroke="white" strokeWidth="2" strokeLinejoin="round"/>
-                </svg>
-                {/* Name Badge */}
-                <div className="bg-[#10b981] text-white text-sm font-bold px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap -ml-2 mt-5 z-10 hidden sm:block">
-                  Abdessalam Chakiri
-                </div>
-              </div>
-
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Viralité organique</h3>
             <p className="text-green-50 leading-relaxed">

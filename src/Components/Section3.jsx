@@ -58,16 +58,21 @@ const Section3 = () => {
         </p>
 
         {/* Steps Container */}
-        <div className="relative flex flex-col md:flex-row justify-between items-start gap-8">
+        <div className="relative flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-4 lg:gap-8">
           
           {/* Connecting Line (Desktop Only) */}
-          <div className="hidden md:block absolute top-12 left-10 right-10 h-0.5 border-t-2 border-dashed border-slate-200 -z-0"></div>
+          <div className="hidden md:block absolute top-10 left-16 right-16 h-0.5 border-t-2 border-dashed border-slate-200 -z-0"></div>
 
           {steps.map((step, index) => (
-            <div key={index} className="relative z-10 flex flex-col items-center flex-1 group">
+            <div key={index} className="relative z-10 flex flex-row md:flex-col items-start md:items-center w-full md:w-auto md:flex-1 group">
               
+              {/* Vertical connecting line (Mobile Only) */}
+              {index !== steps.length - 1 && (
+                <div className="md:hidden absolute top-20 left-10 -ml-[1px] -bottom-8 w-0 border-l-2 border-dashed border-slate-200 -z-10"></div>
+              )}
+
               {/* Icon Box with Step Number */}
-              <div className="relative mb-6">
+              <div className="relative mr-6 md:mr-0 md:mb-6 shrink-0">
                 <div className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-sm
                   ${step.color === 'green' 
                     ? 'bg-white ring-1 ring-green-100 group-hover:ring-green-400' 
@@ -85,10 +90,12 @@ const Section3 = () => {
               </div>
 
               {/* Text */}
-              <h3 className="text-lg font-black text-slate-900 mb-2">{step.title}</h3>
-              <p className="text-sm text-slate-500 leading-relaxed max-w-[160px]">
-                {step.desc}
-              </p>
+              <div className="flex flex-col pt-3 md:pt-0">
+                <h3 className="text-lg md:text-xl font-black text-slate-900 mb-1 md:mb-2 text-left md:text-center">{step.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed max-w-[220px] md:max-w-[160px] text-left md:text-center">
+                  {step.desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>
