@@ -7,6 +7,8 @@ import Section5 from '../Components/Section5'
 import Section6 from '../Components/Section6'
 import Section7 from '../Components/Section7'
 import Section8 from '../Components/Section8'
+import Section9 from '../Components/Section9'
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -19,6 +21,8 @@ function Home() {
  <Section6 />
  <Section7 />
  <Section8 />
+ <Section9 />
+ <Footer />
     </div>
   )
 }

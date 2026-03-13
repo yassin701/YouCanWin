@@ -27,7 +27,7 @@ const Section8 = () => {
     {
       id: 3,
       image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800", // Phone / Gaming
-      badge: null,
+      badge: { text: "STAR", color: "bg-[#18A058]" },
       title: "Tombola digitale",
       description: "Tirages au sort avec lots sponsorisés.",
       link: "Découvrir"
@@ -35,7 +35,7 @@ const Section8 = () => {
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800", // UI Mockup
-      badge: null,
+      badge: { text: "STAR", color: "bg-[#18A058]" },
       title: "Pronostics",
       description: "Prédictions de matchs et classements.",
       link: "Découvrir"
