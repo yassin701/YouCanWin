@@ -40,7 +40,7 @@ const Section2 = () => {
         <div className="w-full md:w-1/2">
           <div className="relative rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-500">
             <img 
-              src="/path-to-your-soccer-ball-image.jpg" 
+              src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&q=80&w=800" 
               alt="Football terrain de jeu" 
               className="w-full h-[500px] object-cover"
             />
